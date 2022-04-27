@@ -5,15 +5,14 @@
     $apellido= '';
 
     if  (isset($_GET['id'])) {
-
-    $id = $_GET['id'];
-    $query = "SELECT * FROM estudiantes WHERE id=$id";
-    $result = mysqli_query($conn, $query);
-    if (mysqli_num_rows($result) == 1) {
-    $row = mysqli_fetch_array($result);
-    $nombre = $row['nombre'];
-    $apellido = $row['apellido'];
-    }
+        $id = $_GET['id'];
+        $query = "SELECT * FROM estudiantes WHERE id=$id";
+        $result = mysqli_query($conn, $query);
+        if (mysqli_num_rows($result) == 1) {
+            $row = mysqli_fetch_array($result);
+            $nombre = $row['nombre'];
+            $apellido = $row['apellido'];
+        }
     }
 
     if (isset($_POST['update'])) {

@@ -1,3 +1,3 @@
-# PHP-CRUD-LINUIX
+# PHP-CRUD-LINUX
 Realizo por motivo academico
 practicando....

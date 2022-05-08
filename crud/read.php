@@ -1,8 +1,8 @@
 <?php
-include("../complementos/conexion.php");
-$query = "SELECT * FROM estudiantes";
-$result_tasks = mysqli_query($conn, $query);    
-while($row = mysqli_fetch_assoc($result_tasks)) { ?>
+    include("../complementos/conexion.php");
+    $query = "SELECT * FROM estudiantes";
+    $result_tasks = mysqli_query($conn, $query);    
+    while($row = mysqli_fetch_assoc($result_tasks)) { ?>
     
     <tr>
         <td><?php echo $row['nombre']; ?></td>
